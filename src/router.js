@@ -8,18 +8,6 @@ const router = (req, res)=>{
     handlers.handlePosts(req, res);
   } else if (endpoint ==='/posts') {
     handlers.serveBlogs(res);
-  } else if(endpoint === '/public/main.css'){
-    handlers.serveFiles(endpoint, res);
-    console.log(endpoint);
-  } else if (endpoint === '/public/script.js') {
-    handlers.serveFiles(endpoint, res);
-    console.log(endpoint);
-  } else if (endpoint === '/public/logo1.png') {
-    handlers.serveFiles(endpoint, res);
-    console.log(endpoint);
-  } else if (endpoint === '/public/style.css') {
-    handlers.serveFiles(endpoint, res);
-    console.log(endpoint);
   } else {
     handlers.serveFiles(endpoint, res);
     console.log(endpoint);
