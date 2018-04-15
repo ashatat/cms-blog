@@ -23,7 +23,7 @@ const serveFiles = (endpoint, res)=>{
 }
 
 const handlePosts = (req, res)=>{
-  res.writeHead(302, { Location: `http://${req.headers.host}/` });
+  res.writeHead(302, { Location: '/' });
   let reqData = '';
   req.on('data',(chunk)=>{
     reqData += chunk;
